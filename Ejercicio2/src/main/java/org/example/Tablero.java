@@ -34,5 +34,15 @@ public class Tablero{
             }
         }
     }
+
+    public void transitarAlEstadoSiguiente(){
+        for(int i = 0; i < DIMENSION; i++){
+            for(int j = 0; j < DIMENSION; j++){
+                estadoActual[i][j] = estadoSiguiente[i][j];
+            }
+        }
+    }
+
+    
 }
 
