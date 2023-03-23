@@ -12,6 +12,8 @@
  */
 package org.example;
 
+import java.util.Arrays;
+
 public class Tablero{
 
     private static int DIMENSION = 30;
@@ -43,6 +45,16 @@ public class Tablero{
         }
     }
 
-    
+    @Override
+    public String toString() {
+        String a = "";
+        for (int i = 0; i < DIMENSION; i++) {
+            for (int j = 0; j < DIMENSION; j++) {
+                a += estadoActual[i][j] + " ";
+            }
+            a += " ";
+        }
+        return a;
+    }
 }
 
